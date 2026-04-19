@@ -1,0 +1,13 @@
+services:
+  promocode-factory-api:
+    image: ghcr.io/elenaxyz/promocodefactory:latest
+    container_name: 'promocode-factory-api'
+    restart: always
+    ports:
+      - "8091:8080"
+    environment:
+      - "ConnectionStrings:PromocodeFactoryDb=Filename=/app/db/PromoCodeFactoryDb.sqlite"
+      - "ASPNETCORE_ENVIRONMENT=Development"
+
+volumes:
+  db:
