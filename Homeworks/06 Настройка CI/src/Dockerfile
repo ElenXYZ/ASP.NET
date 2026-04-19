@@ -6,6 +6,9 @@ COPY . .
 RUN dotnet restore
 RUN dotnet build -c $BUILD_CONFIGURATION --no-restore
 
+FROM build AS test
+RUN dotnet test ./PromoCodeFactory.UnitTests/PromoCodeFactory.UnitTests.csproj --no-build --verbosity normal
+
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
 RUN dotnet publish ./PromoCodeFactory.WebHost/PromoCodeFactory.WebHost.csproj \
