@@ -1,9 +1,3 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f6f3ef;
-}
-
 .app {
     width: 700px;
     margin: 40px auto;
@@ -11,33 +5,37 @@ body {
     background: #ffffff;
     border-radius: 16px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.app-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.app-header h6 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.app-title {
     text-align: center;
-}
-
-h1 {
     margin-bottom: 20px;
+}
+
+.app-title h4 {
+    margin: 0 0 16px 0;
     color: #3e3a39;
 }
 
-button {
-    padding: 10px 18px;
-    font-size: 15px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    background: #d8c3a5;
-    color: #3e3a39;
-    transition: 0.2s;
+.app-title img {
+    width: 240px;
+    border-radius: 12px;
+    margin-bottom: 10px;
 }
-
-    button:hover {
-        background: #cbb292;
-    }
-
-    button:disabled {
-        opacity: 0.6;
-        cursor: default;
-    }
 
 .fact-box {
     margin-top: 20px;
@@ -56,10 +54,4 @@ button {
     background: #e8d2d2;
     color: #6b2e2e;
     border-radius: 12px;
-}
-
-.cat-image {
-    width: 240px;
-    border-radius: 12px;
-    margin-bottom: 10px;
 }
