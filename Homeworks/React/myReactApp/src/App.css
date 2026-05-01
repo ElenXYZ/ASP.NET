@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f6f3ef;
+}
+
+.app {
+    width: 700px;
+    margin: 40px auto;
+    padding: 24px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #3e3a39;
+}
+
+button {
+    padding: 10px 18px;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #d8c3a5;
+    color: #3e3a39;
+    transition: 0.2s;
+}
+
+    button:hover {
+        background: #cbb292;
+    }
+
+    button:disabled {
+        opacity: 0.6;
+        cursor: default;
+    }
+
+.fact-box {
+    margin-top: 20px;
+    padding: 18px;
+    background: #f0e7dd;
+    border-radius: 14px;
+    text-align: left;
+    color: #3e3a39;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.error-box {
+    margin-top: 20px;
+    padding: 16px;
+    background: #e8d2d2;
+    color: #6b2e2e;
+    border-radius: 12px;
+}
+
+.cat-image {
+    width: 240px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
