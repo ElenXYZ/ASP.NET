@@ -1,18 +1,20 @@
+import Button from '@mui/material/Button';
+import Box from '@mui/material/Box';
+
 function ToolBar({ onLoad, onNext, hasData }) {
     return (
-        <div style={{ marginBottom: '20px' }}>
-            <button onClick={onLoad}>
+        <Box sx={{ display: 'flex', gap: 2, mb: 2, justifyContent: 'center' }}>
+            <Button variant="contained" onClick={onLoad}>
                 Загрузить факты
-            </button>
+            </Button>
 
-            <button
+            <Button variant="contained"
                 onClick={onNext}
                 disabled={!hasData}
-                style={{ marginLeft: '10px' }}
             >
                 Следующий факт
-            </button>
-        </div>
+            </Button>
+        </Box>
     );
 }
 
